@@ -1,0 +1,18 @@
+<html lang="en">
+<%- include('./partials/header.ejs')%>
+<body>
+    <%- include('./partials/nav.ejs')%>
+    <h1>Welcome to the homepage</h1>
+    
+    <%for(var i=0;i<flag.length;i++){%>
+        <a href="/blogs/<%=flag[i]._id%>" class='link'>
+        <h1><%=flag[i]['name']%></h1>
+        <h2><%=flag[i]['age']%></h2>
+        <h3><%=flag[i]['sex']%></h3>
+    </a>
+    <%}%>
+    <%- include('./partials/footer.ejs')%>
+    
+    
+</body>
+</html>

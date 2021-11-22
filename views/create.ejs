@@ -1,0 +1,13 @@
+<html lang="en">
+    <%- include('./partials/header.ejs')%>
+<body>
+    <%- include('./partials/nav.ejs')%>
+    <form action="/blogs" method="POST">
+        Name:<input type="text" name='name'/>
+        Age:<input type="text" name='age'/>
+        Sex:<input type="text" name='sex'/>
+        <input type="submit" name="" id="">
+    </form>
+    <%- include('./partials/footer.ejs')%>
+</body>
+</html>

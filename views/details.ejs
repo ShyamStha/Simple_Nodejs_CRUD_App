@@ -1,0 +1,15 @@
+<html lang="en">
+<%- include('./partials/header.ejs')%>
+<body>
+    <%- include('./partials/nav.ejs')%>
+    <form action="/delete" method="POST">
+    <h1><%=blog['name']%></h1>
+    <h2><%=blog['age']%></h2>
+    <h3><%=blog['sex']%></h3>
+    <%- include('./partials/footer.ejs')%>
+    <input type="checkbox" name="checkbox"  onchange="this.form.submit()" value="<%=blog._id%>">
+</form>
+    
+    
+</body>
+</html>
